@@ -15,7 +15,7 @@
 
 .title {
   font-size: 3vw;
-  font-weight: bold;
+  font-wight: bold;
   text-transform: uppercase;
   text-align: center;
   font-family: 'Michroma', sans-serif;
@@ -38,16 +38,56 @@
 @media screen and (max-width: 900px) {
   .homeTitle {
     top: 0%; } }
-
-
-
-
 .App-logo {
   animation: App-logo-spin infinite 20s linear;
-  height: 80px;
-}
+  height: 80px; }
 
+.leftTextArea, .rightTextArea {
+  position: absolute;
+  top: 36%;
+  resize: none;
+  margin-left: 2%;
+  border-radius: 2%;
+  box-shadow: 5px 5px 5px;
+  font-size: 150%;
+  width: 40%;
+  height: 60%;
+  line-height: 150%;
+  padding-top: 2%;
+  padding-left: 2%;
+  background: lightGrey; }
+
+.rightTextArea {
+  box-shadow: -5px 5px 5px;
+  left: 56%; }
+
+.themeButton, .clearButton {
+  position: absolute;
+  top: 30%;
+  left: 46%; }
+
+.clearButton {
+  left: 15%; }
+
+.buttonGroup {
+  position: absolute;
+  top: 24.5%;
+  left: 2%;
+  width: 100%; }
+  .buttonGroup li {
+    margin: 1%;
+    text-align: center; }
+  .buttonGroup a:hover {
+    background-color: black !important;
+    color: white; }
+
+@media screen and (max-width: 900px) {
+  .buttonGroup {
+    top: 19%; } }
 @keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
-}
+  from {
+    transform: rotate(0deg); }
+  to {
+    transform: rotate(360deg); } }
+
+/*# sourceMappingURL=app.css.map */

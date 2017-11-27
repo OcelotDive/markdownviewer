@@ -1,5 +1,5 @@
 $headColor: orange;
-
+$darkTheme: black;
 $headerSize: 3vw;
 body {
    
@@ -11,6 +11,7 @@ body {
 .main {
     height: 100%;
     width: 100%;  
+    
 }
 .clear {
     clear: both;
@@ -60,7 +61,62 @@ body {
   animation: App-logo-spin infinite 20s linear;
   height: 80px;
 }
-
+.leftTextArea {
+    position: absolute;
+    top: 36%;
+    resize: none;
+    margin-left: 2%;
+    border-radius: 2%;
+    box-shadow: 5px 5px 5px;
+    font-size: 150%;
+    width: 40%;
+    height: 60%;
+    line-height: 150%;
+    padding-top: 2%;
+    padding-left: 2%;
+    background: lightGrey;
+    
+   
+}
+.rightTextArea {
+    @extend .leftTextArea;
+    box-shadow: -5px 5px 5px;
+    left: 56%;
+}
+.themeButton {
+    position: absolute;
+    top: 30%;
+    left: 46%;
+}
+.clearButton {
+    @extend .themeButton;
+    left: 15%;
+}
+.buttonGroup {
+    position: absolute;
+    top: 24.5%;
+    left: 2%;
+    width: 100%;
+    
+    li {
+      
+        margin: 1%;
+        text-align: center;
+        
+    
+    }
+    a:hover {
+        background-color: black !important;
+        color: white;
+    }
+  
+}
+  @media screen and (max-width: 900px) {
+   .buttonGroup{
+        top: 19%;
+      
+    }
+}
 @keyframes App-logo-spin {
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
