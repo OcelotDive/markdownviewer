@@ -14,9 +14,17 @@ body {
 
 .main {
     height: 100%;
+<<<<<<< HEAD
     width: 100%;
 
 
+=======
+    width: 100%;  
+    
+}
+.clear {
+    clear: both;
+>>>>>>> 24d13585cd0500e7fb184fae430966235e9dec98
 }
 
 .homeTitle {
@@ -99,17 +107,51 @@ body {
     top: 30%;
     left: 46%;
 }
+<<<<<<< HEAD
 
+=======
+.leftTextArea {
+    position: absolute;
+    top: 36%;
+    resize: none;
+    margin-left: 2%;
+    border-radius: 2%;
+    box-shadow: 5px 5px 5px;
+    font-size: 150%;
+    width: 40%;
+    height: 60%;
+    line-height: 150%;
+    padding-top: 2%;
+    padding-left: 2%;
+    background: lightGrey;
+    
+   
+}
+.rightTextArea {
+    @extend .leftTextArea;
+    box-shadow: -5px 5px 5px;
+    left: 56%;
+}
+.themeButton {
+    position: absolute;
+    top: 30%;
+    left: 46%;
+}
+>>>>>>> 24d13585cd0500e7fb184fae430966235e9dec98
 .clearButton {
     @extend .themeButton;
     left: 15%;
 }
+<<<<<<< HEAD
 
+=======
+>>>>>>> 24d13585cd0500e7fb184fae430966235e9dec98
 .buttonGroup {
     position: absolute;
     top: 24.5%;
     left: 2%;
     width: 100%;
+<<<<<<< HEAD
 
     li {
 
@@ -117,11 +159,21 @@ body {
         text-align: center;
 
 
+=======
+    
+    li {
+      
+        margin: 1%;
+        text-align: center;
+        
+    
+>>>>>>> 24d13585cd0500e7fb184fae430966235e9dec98
     }
     a:hover {
         background-color: black !important;
         color: white;
     }
+<<<<<<< HEAD
 
 }
 
@@ -169,6 +221,16 @@ body {
     @extend .markHeaderOne;
     left: 59%;
 }
+=======
+  
+}
+  @media screen and (max-width: 900px) {
+   .buttonGroup{
+        top: 19%;
+      
+    }
+}
+>>>>>>> 24d13585cd0500e7fb184fae430966235e9dec98
 @keyframes App-logo-spin {
     from {
         transform: rotate(0deg);
