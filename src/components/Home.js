@@ -5,7 +5,7 @@ export class Home extends React.Component {
     
     render() {
         return(
-            <div class="homeTitle">
+            <div className="homeTitle">
                 <h1 className="title">React.Js Markdown Viewer</h1>
             </div>
             

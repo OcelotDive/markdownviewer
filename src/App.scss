@@ -1,25 +1,30 @@
 $headColor: orange;
-
+$darkTheme: black;
 $headerSize: 3vw;
 body {
-   
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
 }
+
 #headerComp {
     background-color: $headColor;
-  
+
 }
+
 .main {
     height: 100%;
-    width: 100%;  
+    width: 100%;
+
+
 }
-.clear {
-    clear: both;
-}
+
 .homeTitle {
-   position: absolute;
+    position: absolute;
     top: 3%;
     left: 15%;
 }
+
 .title {
     font-size: $headerSize;
     font-wight: bold;
@@ -27,18 +32,22 @@ body {
     text-align: center;
     font-family: 'Michroma', sans-serif;
     color: black;
-    
+
+
 }
+
 .logoHolder {
     width: 8%;
     height: 8%;
     float: left;
 
 }
+
 .logo {
     width: 100%;
     height: 80%;
 }
+
 .logoLabel {
     margin-left: 2%;
     white-space: nowrap;
@@ -46,9 +55,9 @@ body {
 }
 
 @media screen and (max-width: 900px) {
-   .homeTitle {
+    .homeTitle {
         top: 0%;
-      
+
     }
 }
 
@@ -57,11 +66,114 @@ body {
 
 
 .App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
+    animation: App-logo-spin infinite 20s linear;
+    height: 80px;
 }
 
+.leftTextArea {
+    position: absolute;
+    top: 36%;
+    resize: none;
+    margin-left: 2%;
+    border-radius: 2%;
+    box-shadow: 5px 5px 5px;
+    font-size: 150%;
+    width: 40%;
+    height: 60%;
+    line-height: 350%;
+    padding-top: 2%;
+    padding-left: 2%;
+    background: lightGrey;
+    font-family: 'Michroma', sans-serif;
+
+}
+
+.rightTextArea {
+    @extend .leftTextArea;
+    box-shadow: -5px 5px 5px;
+    left: 56%;
+}
+
+.themeButton {
+    position: absolute;
+    top: 30%;
+    left: 46%;
+}
+
+.clearButton {
+    @extend .themeButton;
+    left: 15%;
+}
+
+.buttonGroup {
+    position: absolute;
+    top: 24.5%;
+    left: 2%;
+    width: 100%;
+
+    li {
+
+        margin: 1%;
+        text-align: center;
+
+
+    }
+    a:hover {
+        background-color: black !important;
+        color: white;
+    }
+
+}
+
+@media screen and (max-width: 900px) {
+    .buttonGroup {
+        top: 19%;
+
+    }
+}
+
+.helpDiv {
+    position: absolute;
+    width: 30%;
+    height: 50%;
+    background: white;
+    border: ridge 10px grey;
+    top: 35%;
+    left: 35%;
+    opacity: 1;
+    transition: opacity 0.5s;
+    padding-left: 1%;
+    line-height: 200%;
+    font-size: 120%;
+    box-shadow: 6px 6px 6px;
+    z-index: 12;
+}
+
+.helpDivHide {
+    @extend .helpDiv;
+    opacity: 0;
+    transition: opacity 0.5s
+}
+
+.markHeaderOne {
+    position: absolute;
+    top: 35%;
+    left: 3%;
+    z-index: 9;
+    text-decoration: underline;
+    font-size: 150%;
+    font-weight: 900;
+    
+}
+.markHeaderTwo {
+    @extend .markHeaderOne;
+    left: 59%;
+}
 @keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
 }

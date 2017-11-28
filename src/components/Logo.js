@@ -5,8 +5,8 @@ export class Logo extends React.Component {
     
     render() {
         return(
-            <div class="logoHolder">
-                <img class="logo" src={logo}/>
+            <div className="logoHolder">
+                <img className="logo" src={logo} alt="markdown logo"/>
             
             </div>
             
