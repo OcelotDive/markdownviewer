@@ -48,8 +48,8 @@ export class TextAreas extends React.Component {
             
             </textarea>
 
-        <textarea className="rightTextArea"  value={marked(this.state.initial)}>
-            {marked(this.state.initial)}
+        <textarea className="rightTextArea"  spellCheck="false" value={marked(this.state.initial)}>
+            
         
             </textarea>
            
