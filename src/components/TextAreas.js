@@ -1,6 +1,17 @@
 import React from "react";
 const marked = require('marked');
 
+marked.setOptions({
+  renderer: new marked.Renderer(),
+  gfm: true,
+  tables: true,
+  breaks: false,
+  pedantic: false,
+  sanitize: true,
+  smartLists: true,
+  smartypants: false
+});
+
 export class TextAreas extends React.Component {
     constructor(props) {
         super();
@@ -47,12 +58,9 @@ export class TextAreas extends React.Component {
            
             
             </textarea>
-
-        <textarea className="rightTextArea"  spellCheck="false" value={marked(this.state.initial)}>
+            <div className="rightTextArea" dangerouslySetInnerHTML={{__html:marked(this.state.initial)}}></div>
+       
             
-        
-            </textarea>
-           
                 <textArea className={classSelect} spellCheck="false" onClick={()=> this.fadeOutHelp()}>{this.props.headings}</textArea>
 </form>
 

@@ -22,7 +22,7 @@ class HeaderComp extends React.Component {
          let helpText = {
              
              headings:  'HEADINGS' + "\n" + "\n" + '# heading = <h1>' + "\n" + '## heading = <h2>' + "\n" + '### heading = <h3>' + "\n" + "\n"
-                        + 'TEXT' + "\n" + "\n" + '*italic*' +  "\n" + '**bold**' + "\n" + '***bold-italic***' + "\n" + '[link](http://example.com)' + "\n" + "\n" + 'LISTS'  + "\n" + "\n" + '* listItemOne' + "\n" + '* listItemTwo' + "\n" + ' ' + ' ' + ' ' + ' ' + ' ' + ' ' + '* listTwoSubItem' + "\n" + '* listItemThree' + "\n" + "\n" + 'STRIKETHROUGH' + "\n" + "\n" +'~~deleted word~~' + "\n" + "\n" + 'HIGHLIGHT' + "\n" + "\n" + '==highlight background=='
+                        + 'TEXT' + "\n" + "\n" + '*italic*' +  "\n" + '**bold**' + "\n" + '***bold-italic***' + "\n" + '[link](http://example.com)' + "\n" + "\n" + 'LISTS'  + "\n" + "\n" + '* listItemOne' + "\n" + '* listItemTwo' + "\n" + ' ' + ' ' + ' ' + ' ' + ' ' + ' ' + '* listTwoSubItem' + "\n" + '* listItemThree' + "\n" + "\n" + 'STRIKETHROUGH' + "\n" + "\n" +'~~deleted word~~' + "\n" + "\n" + 'LINK' + "\n" + "\n" + '[An inline-style link](https://www.google.com)'
 
          }
         return (
@@ -41,7 +41,7 @@ class HeaderComp extends React.Component {
                 </div>
 
                 <h2 className="markHeaderOne">Markdown</h2>
-                <h2 className="markHeaderTwo">MarkUp</h2>
+                <h2 className="markHeaderTwo">Preview</h2>
                
                 <TextAreas initial={paragraphs.initial} headings={helpText.headings}/>
                 
