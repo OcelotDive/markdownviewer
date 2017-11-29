@@ -100,7 +100,8 @@ body {
 
 .helpDivHide {
   opacity: 0;
-  transition: opacity 0.5s; }
+  transition: opacity 0.5s;
+  pointer-events: none; }
 
 .markHeaderOne, .markHeaderTwo {
   position: absolute;

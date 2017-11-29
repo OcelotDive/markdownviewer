@@ -56,7 +56,7 @@ export class TextAreas extends React.Component {
         <textarea id="content" className="leftTextArea" rows="30" cols="100" name="markdownArea" form="usrformleft" spellCheck="false" placeholder="Write Markdown" value={this.state.initial} onChange={(event) => this.watchChange(event)}>
             
            
-            
+        
             </textarea>
             <div className="rightTextArea" dangerouslySetInnerHTML={{__html:marked(this.state.initial)}}></div>
        
